@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sales Performance Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>📊 Sales Performance Dashboard</h1>
+    <div class="filters">
+      <select>
+        <option>Tahun 2025</option>
+        <option>Tahun 2024</option>
+      </select>
+      <select>
+        <option>Wilayah Semua</option>
+        <option>Jawa Tengah</option>
+        <option>DKI Jakarta</option>
+        <option>Jawa Timur</option>
+      </select>
+      <select>
+        <option>Kategori Semua</option>
+        <option>Elektronik</option>
+        <option>Pakaian</option>
+        <option>Buku</option>
+      </select>
+    </div>
+  </header>
+
+  <section class="kpi">
+    <div class="card">💰 <h2>Total Sales</h2><p>Rp 1.200.000.000</p></div>
+    <div class="card">🛒 <h2>Transactions</h2><p>4.350</p></div>
+    <div class="card">📦 <h2>Average Order Value</h2><p>Rp 275.000</p></div>
+    <div class="card">📈 <h2>Sales Growth</h2><p>+15%</p></div>
+  </section>
+
+  <main>
+    <div class="chart-container">
+      <canvas id="lineChart"></canvas>
+    </div>
+    <div class="chart-container">
+      <canvas id="barChart"></canvas>
+    </div>
+    <div class="chart-container">
+      <canvas id="pieChart"></canvas>
+    </div>
+    <div class="chart-container">
+      <canvas id="mapChart"></canvas>
+    </div>
+  </main>
+
+  <footer>
+    <h3>Insight:</h3>
+    <p>Penjualan meningkat 18% pada Q3 karena promo back-to-school. Wilayah Jawa Tengah memiliki pertumbuhan tertinggi tahun ini.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
